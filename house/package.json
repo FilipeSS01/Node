@@ -1,0 +1,12 @@
+{
+  "name": "testenode",
+  "version": "1.0.0",
+  "description": "Teste com Node.js",
+  "main": "app.pj",
+  "scripts": {
+    "app": "node app.js"
+  },
+  "type": "module",
+  "author": "Filipe",
+  "license": "ISC"
+}
