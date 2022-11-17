@@ -6,6 +6,7 @@
   "scripts": {
     "app": "node app.js"
   },
+  "type": "module",
   "author": "Filipe",
   "license": "ISC"
 }
