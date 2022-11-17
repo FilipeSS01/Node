@@ -1,0 +1,11 @@
+{
+  "name": "banco",
+  "version": "1.0.0",
+  "description": "Banco com Node.js",
+  "main": "app.js",
+  "scripts": {
+    "app": "node app.js"
+  },
+  "author": "Filipe",
+  "license": "ISC"
+}
