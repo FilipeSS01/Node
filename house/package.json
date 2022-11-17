@@ -1,7 +1,7 @@
 {
-  "name": "testenode",
+  "name": "House",
   "version": "1.0.0",
-  "description": "Teste com Node.js",
+  "description": "House com Node.js",
   "main": "app.pj",
   "scripts": {
     "app": "node app.js"
