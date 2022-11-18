@@ -10,21 +10,21 @@ export class Conta {
         this.#setUltimoNome(ultimoNome)
         this.#setCpf(cpf)
         this.#setConta(conta)
-        this.#setSaldo(saldo)
+        this.setSaldo(saldo)
     }
 
     saque(value) {
-        return `Conta: ${this.#getConta()}\nTitular: ${this.#getNome()}\nValor retirado: R$ ${value}\nSaldo: R$ ${this.#getSaldo()}`
+        return `Conta: ${this.#getConta()}\nTitular: ${this.#getNome()}\nValor retirado: R$ ${value}\nSaldo: R$ ${this.getSaldo()}`
     }
     deposito(value) {
-        return `Conta: ${this.#getConta()}\nTitular: ${this.#getNome()}\nValor depositado: R$ ${value}\nSaldo: R$ ${this.#getSaldo()}`
+        return `Conta: ${this.#getConta()}\nTitular: ${this.#getNome()}\nValor depositado: R$ ${value}\nSaldo: R$ ${this.getSaldo()}`
     }
     saldo() {
-        return `Conta: ${this.#getConta()}\nTitular: ${this.#getNome()}\nSaldo: R$ ${this.#getSaldo()}`
+        return `Conta: ${this.#getConta()}\nTitular: ${this.#getNome()}\nSaldo: R$ ${this.getSaldo()}`
     }
 
     toString() {
-        return `${super.toString()}\nConta: ${this.#getConta()}\nTitular: ${this.#getNome()}\nSaldo: R$ ${this.#getSaldo()}`
+        return `${super.toString()}\nConta: ${this.#getConta()}\nTitular: ${this.#getNome()}\nSaldo: R$ ${this.getSaldo()}`
     }
 
     #getNome() {
@@ -59,10 +59,10 @@ export class Conta {
         this.#conta = conta
     }
 
-    #getSaldo() {
+    getSaldo() {
         return this.#saldo
     }
-    #setSaldo(saldo) {
+    setSaldo(saldo) {
         this.#saldo = saldo
     }
 }

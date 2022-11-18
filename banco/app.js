@@ -1,6 +1,9 @@
 // import { Conta } from "./Conta.js";
-import { Poupanca } from "./poupanca.js";
+// import { Poupanca } from "./poupanca.js";
+import { Investimento } from "./investimento.js"
 
-const contaPoupaca = new Poupanca('Filipe', 'Silva', 13217908643, 42342, 10000)
 
-console.log(contaPoupaca.saldo())
+const contaInvestimento = new Investimento('Filipe', 'Silva', 13217908643, 42342, 10000)
+
+console.log(contaInvestimento.mes())
+console.log(contaInvestimento.mes())
