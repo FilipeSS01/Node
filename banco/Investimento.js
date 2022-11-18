@@ -12,7 +12,7 @@ export class Investimento extends Conta {
     }
 
     saque(value) {
-        super.saldo = super.saldo - 25
+        this.setSaldo(this.getSaldo() - 25)
         return `${super.saque(value)}\nValor da operação: R$ 25`
     }
 
