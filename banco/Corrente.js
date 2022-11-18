@@ -7,8 +7,8 @@ export class Corrente extends Conta {
     }
 
     mes() {
-        this.setSaldo(this.getSaldo() - 5)
-        return `${super.saldo()}\nManutenção: R$ 5`
+        super.setSaldo(super.getSaldo() - 5)
+        return `${super.mes()}\nManutenção: R$ 5`
     }
 
     saque(value) {

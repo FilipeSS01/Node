@@ -7,8 +7,8 @@ export class Poupanca extends Conta {
     }
 
     mes() {
-        this.setSaldo(this.getSaldo() * 1.007)
-        return `${super.saldo()}\nRendimento: R$ ${this.getSaldo() - (this.getSaldo() / 1.007)}`
+        super.setSaldo(this.getSaldo() * 1.007)
+        return `${super.mes()}\nRendimento: R$ ${super.getSaldo() - (super.getSaldo() / 1.007)}`
     }
 
     saque(value) {

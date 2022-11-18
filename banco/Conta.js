@@ -13,18 +13,17 @@ export class Conta {
         this.setSaldo(saldo)
     }
 
+    mes() {
+        return `Conta: ${this.#getConta()}\nTitular: ${this.#getNome()}\nCPF: ${this.#getCpf()}\nSaldo: R$ ${this.getSaldo()}`
+    }
     saque(value) {
-        return `Conta: ${this.#getConta()}\nTitular: ${this.#getNome()}\nValor retirado: R$ ${value}\nSaldo: R$ ${this.getSaldo()}`
+        return `Conta: ${this.#getConta()}\nTitular: ${this.#getNome()}\nCPF: ${this.#getCpf()}\nValor retirado: R$ ${value}\nSaldo: R$ ${this.getSaldo()}`
     }
     deposito(value) {
-        return `Conta: ${this.#getConta()}\nTitular: ${this.#getNome()}\nValor depositado: R$ ${value}\nSaldo: R$ ${this.getSaldo()}`
+        return `Conta: ${this.#getConta()}\nTitular: ${this.#getNome()}\nCPF: ${this.#getCpf()}\nValor depositado: R$ ${value}\nSaldo: R$ ${this.getSaldo()}`
     }
     saldo() {
-        return `Conta: ${this.#getConta()}\nTitular: ${this.#getNome()}\nSaldo: R$ ${this.getSaldo()}`
-    }
-
-    toString() {
-        return `\nConta: ${this.#getConta()}\nTitular: ${this.#getNome()}\nSaldo: R$ ${this.getSaldo()}`
+        return `Conta: ${this.#getConta()}\nTitular: ${this.#getNome()}\nCPF: ${this.#getCpf()}\nSaldo: R$ ${this.getSaldo()}`
     }
 
     #getNome() {
