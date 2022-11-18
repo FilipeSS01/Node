@@ -24,7 +24,7 @@ export class Conta {
     }
 
     toString() {
-        return `${super.toString()}\nConta: ${this.#getConta()}\nTitular: ${this.#getNome()}\nSaldo: R$ ${this.getSaldo()}`
+        return `\nConta: ${this.#getConta()}\nTitular: ${this.#getNome()}\nSaldo: R$ ${this.getSaldo()}`
     }
 
     #getNome() {
@@ -63,6 +63,6 @@ export class Conta {
         return this.#saldo
     }
     setSaldo(saldo) {
-        this.#saldo = saldo
+        this.#saldo = saldo.toFixed(2)
     }
 }
