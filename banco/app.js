@@ -1,4 +1,4 @@
-import { Poupanca } from "./src/Poupanca";
+import { Poupanca } from "./src/Poupanca.js";
 import { Corrente } from "./src/Corrente.js"
 import { Investimento } from "./src/investimento.js"
 
@@ -12,7 +12,7 @@ contas.push(contaInvestimento)
 contas.push(contaPoupanca)
 contas.push(contaCorrente)
 
-contas.forEach((conta)=>{
+contas.forEach((conta) => {
     console.log(conta.saldo() + "\n");
     console.log(conta.mes() + "\n");
     console.log(conta.mes() + "\n");
