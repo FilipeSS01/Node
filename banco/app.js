@@ -1,6 +1,6 @@
-import { Poupanca } from "./poupanca.js";
-import { Corrente } from "./Corrente.js"
-import { Investimento } from "./investimento.js"
+import { Poupanca } from "./src/Poupanca";
+import { Corrente } from "./src/Corrente.js"
+import { Investimento } from "./src/investimento.js"
 
 
 const contaCorrente = new Corrente('Filipe', 'Silva', 13217908643, 42342, 10000)
